@@ -1,5 +1,7 @@
 @use '../../scss/variables' as *;
 
+@use '../../scss/mixins' as *;
+
 .title {
   grid-column: 1 / 5;
   font-size: 2rem;
@@ -7,6 +9,10 @@
   line-height: 140%;
   color: $black;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+
+  @include lg {
+    grid-column: 1 / 7;
+  }
 
   &__free {
     position: relative;

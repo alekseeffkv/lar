@@ -1,5 +1,7 @@
 @use '../../scss/variables' as *;
 
+@use '../../scss/mixins' as *;
+
 .app {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -7,8 +9,12 @@
   grid-column-gap: 1rem;
   grid-row-gap: 2rem;
 
+  @include lg {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
   &__logo {
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
 
     svg {
       width: 11rem;
@@ -21,11 +27,16 @@
     font-size: 1rem;
     line-height: 150%;
     color: $black;
+
+    @include lg {
+      grid-column: 1 / 7;
+    }
   }
   &__privacy {
     grid-column: 1 / 3;
     font-size: 0.6rem;
     line-height: 140%;
     color: $white;
+    opacity: 0.8;
   }
 }

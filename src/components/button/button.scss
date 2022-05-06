@@ -1,9 +1,9 @@
 @use '../../scss/variables' as *;
 
 .button {
-  grid-column: 1 / 3;
-  width: 9.4rem;
-  height: 3.2rem;
+  grid-column: 1 / 4;
+  width: 9.5rem;
+  height: 3.3rem;
   border: none;
   outline: none;
   border-radius: 10px;
@@ -19,8 +19,8 @@
     align-items: center;
 
     svg {
-      width: 1.5rem;
-      height: 1.3rem;
+      width: 1.6rem;
+      height: 1.4rem;
     }
   }
 
