@@ -2,6 +2,7 @@
 import './app.scss';
 
 import Title from '../title';
+import Button from '../button';
 
 import { ReactComponent as LogoIcon } from './logo.svg';
 
@@ -20,6 +21,8 @@ const App = () => {
         Access to subtitles in a foreign language, save and review new words and
         phrases, quick dictionary lookup
       </div>
+
+      <Button />
 
       <a href="#" className="app__privacy">
         Privacy Policy
