@@ -1,0 +1,30 @@
+@use '../../scss/variables' as *;
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+
+  &__logo {
+    grid-column: 1 / 3;
+
+    svg {
+      width: 170px;
+      height: auto;
+    }
+  }
+
+  &__description {
+    grid-column: 1 / 5;
+    font-size: 0.7rem;
+    line-height: 150%;
+    color: $black;
+  }
+  &__privacy {
+    grid-column: 1 / 3;
+    font-size: 0.5rem;
+    line-height: 140%;
+    color: $white;
+  }
+}

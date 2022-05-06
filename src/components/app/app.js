@@ -1,0 +1,25 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import './app.scss';
+
+import { ReactComponent as LogoIcon } from './logo.svg';
+
+const App = () => {
+  return (
+    <div className="app container">
+      <a href="#" className="app__logo">
+        <LogoIcon />
+      </a>
+
+      <div className="app__description">
+        Access to subtitles in a foreign language, save and review new words and
+        phrases, quick dictionary lookup
+      </div>
+
+      <a href="#" className="app__privacy">
+        Privacy Policy
+      </a>
+    </div>
+  );
+};
+
+export default App;

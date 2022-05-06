@@ -1,5 +1,7 @@
 @import-normalize;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,4 +10,25 @@
 
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 360px;
 }
