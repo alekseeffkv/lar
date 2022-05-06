@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+@import '~slick-carousel/slick/slick.scss';
+@import '~slick-carousel/slick/slick-theme.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +24,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 100vh;
 }
 
 a {
@@ -29,6 +31,6 @@ a {
 }
 
 .container {
-  margin: 50px auto;
+  margin: 2.5rem auto;
   max-width: 360px;
 }

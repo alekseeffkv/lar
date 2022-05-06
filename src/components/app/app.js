@@ -3,6 +3,7 @@ import './app.scss';
 
 import Title from '../title';
 import Button from '../button';
+import Carousel from '../carousel';
 
 import { ReactComponent as LogoIcon } from './logo.svg';
 
@@ -23,6 +24,8 @@ const App = () => {
       </div>
 
       <Button />
+
+      <Carousel />
 
       <a href="#" className="app__privacy">
         Privacy Policy
