@@ -8,15 +8,13 @@ import Carousel from '../carousel';
 import { ReactComponent as LogoIcon } from './logo.svg';
 
 const App = () => {
-  const lang = 'english';
-
   return (
     <div className="app container">
       <a href="#" className="app__logo">
         <LogoIcon />
       </a>
 
-      <Title lang={lang} />
+      <Title />
 
       <div className="app__description">
         Access to subtitles in a foreign language,
