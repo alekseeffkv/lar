@@ -2,6 +2,8 @@ import './carousel.scss';
 
 import Slider from 'react-slick';
 
+import Arrow from '../arrow';
+
 import preview1 from './images/preview1.jpg';
 import preview2 from './images/preview2.jpg';
 import preview3 from './images/preview3.jpg';
@@ -17,11 +19,23 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
     fade: true,
     pauseOnFocus: true,
     pauseOnHover: true,
     infinite: false,
+    arrows: true,
+    dots: false,
+    prevArrow: <Arrow prev />,
+    nextArrow: <Arrow next />,
+    responsive: [
+      {
+        breakpoint: 959,
+        settings: {
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
   };
 
   return (
