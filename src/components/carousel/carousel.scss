@@ -6,9 +6,13 @@
   grid-column: 1 / 5;
   margin-bottom: 2rem;
 
+  @include md {
+    grid-column: 5 / 9;
+    grid-row: 1 / 5;
+  }
+
   @include lg {
     grid-column: 7 / 13;
-    grid-row: 1 / 5;
   }
 
   &__item {
@@ -56,14 +60,24 @@
       display: none;
     }
 
-    &:hover,
+    &.slick-disabled {
+      opacity: 0.5;
+    }
+
     &:focus {
       background: $white;
       opacity: 0.8;
     }
 
-    &.slick-disabled {
-      opacity: 0.5;
+    &:hover {
+      background: $white;
+    }
+
+    @include lg {
+      &:hover {
+        background: $white;
+        opacity: 0.8;
+      }
     }
   }
 }
