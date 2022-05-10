@@ -17,9 +17,8 @@ const App = () => {
       <Title />
 
       <div className="app__description">
-        Access to subtitles in a foreign language,
-        <br />
-        save and review new words and phrases, quick dictionary lookup
+        Access to subtitles in a foreign language, save and review new words and
+        phrases, quick dictionary lookup
       </div>
 
       <Button />

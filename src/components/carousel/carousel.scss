@@ -5,6 +5,7 @@
 .carousel {
   grid-column: 1 / 5;
   margin-bottom: 2rem;
+  min-width: 0;
 
   @include md {
     grid-column: 5 / 9;

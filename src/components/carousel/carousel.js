@@ -29,7 +29,7 @@ const Carousel = () => {
     nextArrow: <Arrow next />,
     responsive: [
       {
-        breakpoint: 959,
+        breakpoint: 899,
         settings: {
           dots: true,
           arrows: false,
